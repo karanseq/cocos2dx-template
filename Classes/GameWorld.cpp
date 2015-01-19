@@ -48,11 +48,8 @@ void GameWorld::OnPauseClicked(CCObject* sender)
 	// pause game elements here
 
 	// create & add the pause popup
-	//PausePopup* pause_popup = PausePopup::create(this);
-	//addChild(pause_popup, E_LAYER_POPUP);
-	
-	Popup* popup = LevelCompletePopup::create(this, 1234);
-	addChild(popup, E_LAYER_POPUP);
+	PausePopup* pause_popup = PausePopup::create(this);
+	addChild(pause_popup, E_LAYER_POPUP);
 }
 
 void GameWorld::ResumeGame()
